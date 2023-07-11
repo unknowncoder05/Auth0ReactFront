@@ -7,6 +7,6 @@ export const Auth0Configs = {
     domain: process.env.REACT_APP_AUTH0_DOMAIN,
     clientId: process.env.REACT_APP_AUTH0_CLIENT_ID,
     redirectUri: window.location.origin,
-    defaultAudience: `https://${process.env.REACT_APP_AUTH0_DOMAIN}/api/v2/`,
+    defaultAudience: process.env.REACT_APP_AUTH0_CLIENT_ID, //`https://${process.env.REACT_APP_AUTH0_DOMAIN}/api/v2/`,
     scope: process.env.REACT_APP_AUTH0_SCOPES,
 }
